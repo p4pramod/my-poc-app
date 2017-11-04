@@ -10,16 +10,13 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AuthGuard } from '../shared/index';
-import { TravelRequestComponent } from './travel-request/travel-request.component';
+
 
 
 @NgModule({
   declarations: [
-    SidebarComponent,
-    HeaderComponent,
     AppComponent,
-    TravelRequestComponent
-  ],
+   ],
   imports: [
     CommonModule,
     NgbDropdownModule.forRoot(),

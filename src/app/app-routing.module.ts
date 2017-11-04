@@ -7,7 +7,7 @@ import { AuthGuard } from '../shared/index';
 const routes: Routes = [
     {
         path: '',
-        component: TravelRequestComponent,
+        loadChildren: './travel-request/travel-request.module#TravelRequestModule',
         canActivate: [AuthGuard]
     },
     { path: 'login', loadChildren: './login/login.module#LoginModule' },
