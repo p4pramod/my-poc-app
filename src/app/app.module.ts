@@ -19,7 +19,6 @@ import { AuthGuard } from '../shared/index';
    ],
   imports: [
     CommonModule,
-    NgbDropdownModule.forRoot(),
     BrowserAnimationsModule,
     FormsModule,
     HttpModule,

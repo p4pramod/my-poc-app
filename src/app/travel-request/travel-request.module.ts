@@ -5,12 +5,14 @@ import { TravelRequestComponent } from './travel-request.component';
 import { NgModule } from '@angular/core';
 import { TravelRequestRoutingModule } from './travel-request-routing.module';
 import { TravelRequestCreateComponent } from './travel-request-create/travel-request-create.component';
+import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
 @NgModule({
   imports: [
     CommonModule,
+    NgbDropdownModule.forRoot(),
     TravelRequestRoutingModule
   ],
   exports: [],
