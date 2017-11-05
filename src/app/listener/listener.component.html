@@ -1,0 +1,11 @@
+<p *ngIf='visible'>
+    listener works!
+</p>
+
+<form *ngIf='visible' [formGroup]="listnerFg">
+  <div class="form-group">
+    <label class="center-block">Name:
+      <input class="form-control" formControlName="Name">
+    </label>
+  </div>
+</form>

@@ -9,6 +9,16 @@ describe('my-poc-app App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to app!');
+
+    page.getlogingButton().click();
+
+    //page.getlogingButton().click();
+
+    expect(page.getParagraphText()).toEqual('SB Admin BS4 Angular4');
   });
+
+  // it('travel leg should load', () => {
+  //   page.navigateTo();
+  //   expect(page.getTrvelvelLegTitle()).toEqual('Travel Leg Component Works!');
+  // });
 });

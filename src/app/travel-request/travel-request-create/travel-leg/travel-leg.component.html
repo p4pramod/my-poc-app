@@ -1,3 +1,15 @@
 <div [@routerTransition]>
-  asfdasdfasdfasd
+  Travel Leg Component Works!
+
+  <form [formGroup]="controllerFg">
+
+    <input type="text" formControlName="ContainerControl" />
+
+    <app-parent [fgroup]='controllerFg.eventSender' (selectedValue)="handleChangeEvent($event)"></app-parent>
+<!--
+    <app-listener [fgroup]='controllerFg.eventReceiver' [visible]="sendShowHindToLister"></app-listener> -->
+
+  </form>
+
+
 </div>

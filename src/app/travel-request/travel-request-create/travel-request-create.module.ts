@@ -10,6 +10,6 @@ import { TravelRequestCreateRoutingModule } from './travel-request-create-routin
     CommonModule,
     TravelRequestCreateRoutingModule
   ],
-  declarations: [TravelLegComponent, TravelRequestCreateComponent]
+  declarations: [ ]
 })
 export class TravelRequestCreateModule { }
