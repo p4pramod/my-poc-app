@@ -5,11 +5,11 @@
 
     <input type="text" formControlName="ContainerControl" />
 
-    <app-parent [fgroup]='controllerFg.eventSender' (selectedValue)="handleChangeEvent($event)"></app-parent>
-<!--
-    <app-listener [fgroup]='controllerFg.eventReceiver' [visible]="sendShowHindToLister"></app-listener> -->
+    <app-parent [fgroup]='controllerFg.controls.eventSender' (selectedValue)="handleChangeEvent($event)"></app-parent>
+
+    <app-listener [fgroup]='controllerFg.controls.eventReceiver' [visible]="sendShowHindToLister"></app-listener>
 
   </form>
-
+{{controllerFg.value | json}}
 
 </div>
